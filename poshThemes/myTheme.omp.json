@@ -1,0 +1,86 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+      {
+        "alignment": "left",
+        "overflow": "hide",
+        "segments": [
+          {
+            "type": "node",
+            "style": "plain",
+            "foreground": "green",
+            "template": "\uf898 "
+          },
+          {
+            "type": "python",
+            "style": "plain",
+            "foreground": "green",
+            "template": "\uE235"
+          }
+        ],
+        "type": "prompt"
+      },
+      {
+        "alignment": "left",
+        "segments": [
+          {
+            "foreground": "green",
+            "style": "plain",
+            "template": "{{ .UserName }}@{{ .HostName }}",
+            "type": "session"
+          },
+          {
+            "foreground": "lightMagenta",
+            "properties": {
+              "folder_separator_icon": "/",
+              "style": "full"
+            },
+            "style": "plain",
+            "template": " <white>in</> {{ .Path }} ",
+            "type": "path"
+          },
+          {
+            "foreground": "cyan",
+            "powerline_symbol": "\ue0b0",
+            "properties": {
+              "fetch_stash_count": true,
+              "fetch_upstream_icon": true
+            },
+            "style": "plain",
+            "template": "{{ .UpstreamIcon }}( {{ .HEAD }} ) {{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }}",
+            "type": "git"
+          },
+          {
+            "foreground": "darkGray",
+            "properties": {
+              "always_enabled": true
+            },
+            "style": "diamond",
+            "template": "\ufbab {{ .FormattedMs }}\u2800 \n",
+            "type": "executiontime"
+          }
+        ],
+        "type": "prompt"
+      },
+      {
+        "alignment": "left",
+        "newline": true,
+        "segments": [
+          {
+            "foreground": "white",
+            "style": "plain",
+            "template": "🔑",
+            "type": "root"
+          },
+          {
+            "foreground": "white",
+            "style": "plain",
+            "template": " $ ",
+            "type": "text"
+          }
+        ],
+        "type": "prompt"
+      }
+    ],
+    "version": 2
+  }
