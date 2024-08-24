@@ -1,0 +1,72 @@
+/* Command Palette */
+.quick-input-widget {
+    transform: translateY(-50%) !important;
+    top: 43% !important;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, .45) !important;
+    padding: 10px !important;
+    border-radius: 6px !important;
+}
+
+/* Command palette text input */
+.quick-input-filter .monaco-inputbox {
+    border-radius: 6px !important;
+    padding: 4px !important;
+    border: none !important;
+    font-size: 14px !important;
+    margin-bottom: 16px !important;
+}
+
+/* Command palette's input box placeholder. */
+.monaco-inputbox input::placeholder {
+    color: rgba(255, 255, 255, .3) !important;
+}
+
+.command-center-center {
+    width: auto !important;
+}
+
+.sidebar>.composite.title .actions-container .action-item {
+    display: none !important;
+}
+
+.sidebar>.composite.title .actions-container .action-item:nth-child(4) {
+    display: inherit !important;
+}
+
+.title[style*="--editor-group-tab-height"] {
+    --editor-group-tab-height: 30px !important;
+    background-color: transparent !important;
+}
+
+.title .monaco-icon-label-container .label-name {
+    font-size: 12px !important;
+}
+
+.left-items .statusbar-item {
+    display: none !important;
+}
+
+.left-items .statusbar-item[id="status.scm.0"] {
+    display: inherit !important;
+}
+
+.left-items .statusbar-item[id="status.host"] .codicon-remote {
+    display: none !important;
+}
+
+.left-items .statusbar-item[id="status.host"] {
+    display: inherit !important;
+    width: 10px !important;
+}
+
+.right-items .statusbar-item {
+    display: none !important;
+}
+
+.right-items .statusbar-item:first-child {
+    display: inherit !important;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title.title-border-bottom:after {
+    background-color: transparent !important;
+}
