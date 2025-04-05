@@ -3,25 +3,6 @@
     "blocks": [
       {
         "alignment": "left",
-        "overflow": "hide",
-        "segments": [
-          {
-            "type": "node",
-            "style": "plain",
-            "foreground": "green",
-            "template": "\uf898 "
-          },
-          {
-            "type": "python",
-            "style": "plain",
-            "foreground": "green",
-            "template": "\uE235"
-          }
-        ],
-        "type": "prompt"
-      },
-      {
-        "alignment": "left",
         "segments": [
           {
             "foreground": "green",
